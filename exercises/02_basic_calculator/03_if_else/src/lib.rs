@@ -1,8 +1,14 @@
 /// Return `12` if `n` is even,
 /// `13` if `n` is divisible by `3`,
 /// `17` otherwise.
-fn magic_number(n: u32) -> u32 {
-    todo!()
+fn magic_number(_n: u32) -> u32 {
+    if _n % 2 == 0 {
+        12
+    } else if _n % 3u32 == 0 {
+        13u32
+    } else {
+        17u32
+    }
 }
 
 #[cfg(test)]
