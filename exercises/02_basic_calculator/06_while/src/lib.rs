@@ -10,7 +10,7 @@ pub fn factorial(n: u32) -> u32 {
         1
     } else {
         while rem > 0 {
-            total_sum = total_sum * (rem * n);
+            total_sum *= rem;
             rem -= 1
         }
         total_sum
